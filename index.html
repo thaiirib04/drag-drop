@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quadro Kanban</title>
+</head>
+<body>
+    <h1 class="titulo-pagina">Quadro Kanban - SESI</h1>
+    
+    <div class="kanban-container">
+        <div class="coluna" id="a-fazer">
+            <h3>📝 A fazer</h3>
+            <div class="item" draggable="true" id="task-1">JavaScript Prof.Pety</div>
+            <div class="item" draggable="true" id="task-2">Configurar repositório</div>
+            <div class="item" draggable="true" id="task-3">Modelar Banco de Dados Prof.John</div>
+        </div>
+
+        <div class="coluna" id="concluido">
+            <h3>✅ Concluído</h3>
+            <div class="item" draggable="true" id="task-5">Criar API REST</div>
+        </div>
+    </div>
+
+    <span id="status">Arraste uma tarefa para atualizar o status</span>
+
+    <script src="script.js"></script>
+</body>
+</html>

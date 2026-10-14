@@ -1,0 +1,79 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    margin: 0;
+}
+
+.titulo-pagina{
+    width: 100%;
+    max-width: 820px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.kanban-container{
+    display: flex;
+    gap: 20px;
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.coluna{
+    border: 2px dashed #444;
+    padding: 15px;
+    width: 250px;
+    min-height: 300px;
+    border-radius: 8px;
+    background-color: #252525;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.coluna h3{
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #333;
+    font-size: 1.1rem;
+}
+
+.item{
+    background: #333;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    cursor: grab;
+    user-select: none;
+    border-left: 4px solid #bb86fc;
+    transition: transform 0.1s ease, background 0.2s ease;
+}
+
+.item:hover{
+    background: #3d3d3d;
+}
+
+.item:active{
+    cursor:grabbing;
+}
+
+.coluna.over{
+    border-color: #03dac6;
+    background-color: #22333b;
+}
+
+#status{
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 20px;
+    display: block;
+    font-style: italic;
+}
